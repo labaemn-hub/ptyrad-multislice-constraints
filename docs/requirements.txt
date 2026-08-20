@@ -1,0 +1,29 @@
+# Requirements.txt used by Read The Docs
+
+# Use the CPU version pytorch to speed up RTD building
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Install ptyrad
+-e .
+
+# Runtime deps (required for import-time during autodoc)
+accelerate==1.7.0
+h5py==3.13.0
+matplotlib==3.10.3
+optuna==4.3.0
+torch==2.5.1
+scikit-learn==1.6.1
+scipy==1.15.2
+tifffile==2025.5.26
+torchvision==0.20.1
+
+# Sphinx + themes + plugins
+sphinx==8.2.3
+sphinx-book-theme==1.1.4
+myst-parser[linkify]==4.0.1
+myst-nb==1.3.0
+sphinx-autodoc-typehints==3.2.0
+sphinx-design==0.6.1
+sphinx-togglebutton==0.3.2
+autodoc_pydantic==2.2.0
+sphinx-copybutton==0.5.2
